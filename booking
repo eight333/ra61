@@ -3,97 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>璞亦企業有限公司 - 線上3C維修預約</title>
+  <title>穎亦企業有限公司 - 日用品販售</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #f4f6f9;
       margin: 0;
       padding: 0;
-    }
-    .container {
-      max-width: 600px;
-      margin: 50px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    }
-    h1, h3 {
-      text-align: center;
       color: #333;
     }
-    label {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-    }
-    input, textarea, select {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      margin-top: 20px;
-      width: 100%;
-      padding: 12px;
-      background-color: #007BFF;
+    header, footer {
+      background-color: #1a237e;
       color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
+      text-align: center;
+      padding: 20px;
     }
-    button:hover {
-      background-color: #0056b3;
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header p {
+      margin: 4px 0;
+      font-size: 16px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+    .product {
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #fafafa;
+    }
+    .product h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #212121;
+    }
+    .product p {
+      margin: 0;
+      font-size: 14px;
+      color: #616161;
+    }
+    .order-link {
+      display: block;
+      width: 220px;
+      margin: 40px auto 0;
+      padding: 16px;
+      font-size: 16px;
+      background-color: #388e3c;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .order-link:hover {
+      background-color: #2e7d32;
     }
     .info {
-      margin-bottom: 30px;
-      text-align: center;
+      margin-top: 40px;
       font-size: 14px;
-      color: #666;
+      color: #555;
+      text-align: center;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>穎亦生活</h1>
+    <p>YING YI LIFE</p>
+    <p>日用品販售專區</p>
+  </header>
+
   <div class="container">
-    <h1>線上預約維修服務</h1>
-    <h3>璞亦企業有限公司</h3>
-    <div class="info">
-      <p>統一編號：60739870</p>
-      <p>地址：高雄市三民區博愛一路111號4樓</p>
+    <section class="intro" style="margin-bottom: 40px; font-size: 16px; line-height: 1.6; color: #444;">
+  <h2 style="font-size: 22px; color: #1a237e; margin-bottom: 12px;">關於穎亦企業有限公司</h2>
+  <p>穎亦企業有限公司專注於打造便利、美好的生活空間，提供從居家清潔到日常用品的完整解決方案。我們秉持品質第一、服務至上的精神，讓每一位顧客都能感受到安心與貼心的購物體驗。</p>
+  <h3 style="font-size: 18px; color: #1a237e; margin-top: 24px;">企業理念</h3>
+  <p>我們堅信「用心選品、品質至上」，不僅販售產品，更傳遞對生活品質的堅持。每一項商品皆經嚴格篩選，為顧客創造更便利舒適的生活。</p>
+  <h3 style="font-size: 18px; color: #1a237e; margin-top: 24px;">品牌故事</h3>
+  <p>穎亦源於對「穩健、明智」的期許，「亦」象徵著多元與包容。我們從家庭日常出發，立志成為消費者心中最值得信賴的生活用品夥伴。</p>
+  <h3 style="font-size: 18px; color: #1a237e; margin-top: 24px;">團隊介紹</h3>
+  <p>我們是一群熱愛生活、講求品質的專業團隊，從採購、品管到客服，每一步都秉持專業態度，致力提供更貼心的服務與體驗。</p>
+</section>
+    <div class="product-grid">
+      <!-- 商品略 -->
     </div>
 
-    <form>
-      <label for="name">姓名</label>
-      <input type="text" id="name" name="name" required>
+    <section style="margin-top: 60px;">
+      <h2 style="font-size: 22px; color: #1a237e; margin-bottom: 16px;">顧客評價</h2>
+      <ul style="list-style: disc; padding-left: 20px; line-height: 1.8;">
+        <li>「產品品質優良，寄送迅速，非常滿意！」－ 陳小姐</li>
+        <li>「客服人員親切有耐心，訂購流程簡單方便。」－ 張先生</li>
+        <li>「家用品選擇多又實用，會推薦給親友。」－ 林太太</li>
+      </ul>
+    </section>
 
-      <label for="phone">聯絡電話</label>
-      <input type="tel" id="phone" name="phone" required>
+    <section style="margin-top: 60px;">
+      <h2 style="font-size: 22px; color: #1a237e; margin-bottom: 16px;">常見問題 FAQ</h2>
+      <dl style="font-size: 15px; line-height: 1.8;">
+        <dt><strong>Q1：可以開立發票嗎？</strong></dt>
+        <dd>A：可以的，請在訂購時註明統編與抬頭。</dd>
+        <dt><strong>Q2：有提供宅配嗎？</strong></dt>
+        <dd>A：全台皆可宅配，依訂單金額享免運優惠。</dd>
+        <dt><strong>Q3：可以批發或團購嗎？</strong></dt>
+        <dd>A：歡迎批發與團購合作，請來信或來電洽詢。</dd>
+      </dl>
+    </section>
 
-      <label for="email">電子信箱</label>
-      <input type="email" id="email" name="email">
+    <section style="margin-top: 60px;">
+      <h2 style="font-size: 22px; color: #1a237e; margin-bottom: 16px;">聯絡我們</h2>
+      <form style="display: flex; flex-direction: column; gap: 12px; max-width: 600px; margin: 0 auto;">
+        <input type="text" placeholder="您的姓名" required style="padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
+        <input type="email" placeholder="電子郵件" required style="padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
+        <textarea rows="5" placeholder="請輸入您的問題或需求..." required style="padding: 10px; border: 1px solid #ccc; border-radius: 6px;"></textarea>
+        <button type="submit" style="padding: 12px; background-color: #1a237e; color: white; border: none; border-radius: 8px; cursor: pointer;">送出訊息</button>
+      </form>
+    </section>
 
-      <label for="device">裝置類型</label>
-      <select id="device" name="device" required>
-        <option value="">請選擇</option>
-        <option value="notebook">筆記型電腦</option>
-        <option value="desktop">桌上型電腦</option>
-        <option value="tablet">平板</option>
-        <option value="phone">手機</option>
-        <option value="other">其他</option>
-      </select>
+    <a href="mailto:order@example.com?subject=訂購需求&body=您好，我想訂購以下商品：" class="order-link">我要訂購</a>
 
-      <label for="issue">問題描述</label>
-      <textarea id="issue" name="issue" rows="4" required></textarea>
-
-      <label for="date">預約日期</label>
-      <input type="date" id="date" name="date" required>
-
-      <button type="submit">送出預約</button>
-    </form>
+    <div class="info">
+      <p>品牌名稱：穎亦企業有限公司</p>
+      <p>統一編號：60739822</p>
+      <p>公司地址：高雄市三民區博愛一路111號4樓</p>
+    </div>
   </div>
+
+  <footer>
+    <p>&copy; 2025 穎亦企業有限公司. 保留所有權利。</p>
+  </footer>
 </body>
 </html>
