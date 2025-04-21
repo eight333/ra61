@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>璞亦企業有限公司 - 線上3C維修預約</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    h1, h3 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .info {
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>線上預約維修服務</h1>
+    <h3>璞亦企業有限公司</h3>
+    <div class="info">
+      <p>統一編號：60739870</p>
+      <p>地址：高雄市三民區博愛一路111號4樓</p>
+    </div>
+
+    <form>
+      <label for="name">姓名</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">聯絡電話</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">電子信箱</label>
+      <input type="email" id="email" name="email">
+
+      <label for="device">裝置類型</label>
+      <select id="device" name="device" required>
+        <option value="">請選擇</option>
+        <option value="notebook">筆記型電腦</option>
+        <option value="desktop">桌上型電腦</option>
+        <option value="tablet">平板</option>
+        <option value="phone">手機</option>
+        <option value="other">其他</option>
+      </select>
+
+      <label for="issue">問題描述</label>
+      <textarea id="issue" name="issue" rows="4" required></textarea>
+
+      <label for="date">預約日期</label>
+      <input type="date" id="date" name="date" required>
+
+      <button type="submit">送出預約</button>
+    </form>
+  </div>
+</body>
+</html>
